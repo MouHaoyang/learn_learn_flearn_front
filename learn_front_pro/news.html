@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.image-container {
+		  position: relative;
+		}
+		.image-container img {
+		  width: 100%;
+		  height: auto;
+		}
+		.button-container {
+		  position: absolute;
+		  bottom: 10px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		}
+		.button-container button {
+		  font-size: 16px;
+		  color: #000;
+		  background-color: transparent;
+		  border: none;
+		  margin: 0 10px;
+		  padding: 5px 10px;
+		  cursor: pointer;
+		}
+		.button-container button.active {
+		  color: #f00;
+		}
+
+	</style>
+	<body>
+		<!-- 先设置头部元素，先跳过 -->
+		<!-- 下选框展示图片，左中右三个文字按钮，点上去时变红色，默认黑色和选中第一个按钮
+		 -->
+		 <br /><br /><br /><br />
+		 <div class="image-container">
+		   <img src="image.jpg" alt="图片">
+		   <div class="button-container">
+		     <button class="active">全部新闻</button>
+		     <button>产品资讯</button>
+		     <button>最新活动</button>
+		   </div>
+		 </div>
+
+	</body>
+</html>
